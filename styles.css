@@ -8,6 +8,11 @@
 	src: url('resources/fonts/Comme-ExtraBold-webfont.woff') format('woff')
 }
 
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -16,4 +21,54 @@ body {
 .form {
     display: flex;
     flex-direction: column;
+}
+
+#logo-section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 35vw;
+    background-image: url('resources/images/wallhaven-ymrq8g.jpg');
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: 0.1rem solid black;
+    padding-bottom: 0.5rem;
+    justify-content: flex-end; 
+}
+
+#logo-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 15vh;
+    margin-bottom: 65vh;
+}
+
+#logo-image {
+    padding: 0.4em 0;
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#logo-text {
+    font-size: 3rem;
+    color: white;
+    font-family: 'Comme';
+}
+
+#background-logo-section-source {
+    align-self: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#photo-href:visited {
+    color: white;
+}
+
+#photo-href:hover {
+    color:bisque;
 }
