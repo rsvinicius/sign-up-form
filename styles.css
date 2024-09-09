@@ -8,11 +8,12 @@
 	src: url('resources/fonts/Comme-ExtraBold-webfont.woff') format('woff')
 }
 
-header {
-    font-family: 'Comme',Arial, Helvetica, sans-serif;
+body {
+    display: flex;
+    flex-direction: row;
 }
 
-span {
-    font-family: 'Anonymous','Courier New', Courier, monospace;
-    color: red;
+.form {
+    display: flex;
+    flex-direction: column;
 }

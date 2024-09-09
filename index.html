@@ -3,11 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-reset.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Odin Project - Sign Up Form</title>
 </head>
 <body>
-    <header>Header</header>
-    <span>Dummy Content</span>
+    <section id="logo">Odin</section>
+    <form action="">
+        <section id="form-header">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign up now to get started</p>
+            <p>You know you want to</p>
+        </section>
+        <section id="form-body">
+            <label for="firstName">FIRST NAME:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">LAST NAME:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phoneNumber">PHONE NUMBER:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number in the format XXX-XXX-XXXX." required>
+            
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="confirmPassword">CONFIRM PASSWORD:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </section>
+        <section id="form-submit">
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </section>
+    </form>
+
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
