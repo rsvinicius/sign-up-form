@@ -1,3 +1,18 @@
+@font-face{ 
+	font-family: 'Anonymous';
+	src: url('resources/fonts/Anonymous-webfont.woff') format('woff')
+}
+
+@font-face{ 
+	font-family: 'Comme';
+	src: url('resources/fonts/Comme-ExtraBold-webfont.woff') format('woff')
+}
+
+header {
+    font-family: 'Comme',Arial, Helvetica, sans-serif;
+}
+
 span {
-    color: red
+    font-family: 'Anonymous','Courier New', Courier, monospace;
+    color: red;
 }
