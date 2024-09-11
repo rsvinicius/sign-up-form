@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,45 +8,74 @@
     <link rel="stylesheet" href="styles.css">
     <title>Odin Project - Sign Up Form</title>
 </head>
+
 <body>
     <section id="logo-section">
         <div id="logo-card">
             <img src="resources/images/odin-lined.png" alt="ODIN logo" id="logo-image">
             <span id="logo-text">ODIN</span>
         </div>
-        <footer id="background-logo-section-source">Photo by zchangmao on <a id="photo-href" href="https://wallhaven.cc/w/ymrq8g">Wallhaven</a></footer>
+        <footer id="background-logo-section-source">Photo by zchangmao on <a id="photo-href"
+                href="https://wallhaven.cc/w/ymrq8g">Wallhaven</a></footer>
     </section>
-    <form action="">
+    <form id="register-form" action="">
         <section id="form-header">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-            <p>Sign up now to get started</p>
-            <p>You know you want to</p>
+            <div>
+                <p>This is not a real online service! You know you need something like this in your life to help you
+                    realize your deepest dreams.</p>
+                <p>Sign up now to get started.</p>
+            </div>
+            <p>You know you want to.</p>
         </section>
         <section id="form-body">
-            <label for="firstName">FIRST NAME *</label>
-            <input type="text" id="firstName" name="firstName" required>
-            
-            <label for="lastName">LAST NAME *</label>
-            <input type="text" id="lastName" name="lastName" required>
-            
-            <label for="email">EMAIL *</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="phoneNumber">PHONE NUMBER</label>
-            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a valid phone number in the format XXX-XXX-XXXX.">
-            
-            <label for="password">PASSWORD *</label>
-            <input type="password" id="password" name="password" required>
-            
-            <label for="confirmPassword">CONFIRM PASSWORD *</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <p id="form-text-action">Let's do this!</p>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="John" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="john@doe" required>
+                    <div id="email-error" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        title="Please enter a valid phone number in the format XXX-XXX-XXXX." placeholder="XXX-XXX-XXXX"
+                        required>
+                    <div id="phone-error" class="error-message"></div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password" placeholder="Strong Password" required>
+                    <div id="password-error" class="error-message"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirm-password" name="confirm-password" placeholder="Strong Password"
+                        required>
+                </div>
+            </div>
         </section>
         <section id="form-submit">
             <button type="submit">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
+            <p id="login-text">Already have an account? <a href="">Log in</a></p>
         </section>
     </form>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
+
 </html>
